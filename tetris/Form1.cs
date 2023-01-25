@@ -57,7 +57,7 @@ namespace tetris
 
         }
 
-        int counter = 0;
+       
         private void timer_Tick(object sender, EventArgs e)
         {
             for (int j = 0; j < 5; j++)
@@ -89,27 +89,27 @@ namespace tetris
                     list.Add(Tpiece5);
                     pieces.Add(list);
 
-                    counter = 0;
+                   
 
                 }
                 //left right
 
-                //if (aDown == true)
-                //{
-                //    Tpiece1.X -= 20;
-                //    Tpiece4.X -= 20;
-                //    Tpiece3.X -= 20;
-                //    Tpiece2.X -= 20;
-                //    Tpiece5.X -= 20;
-                //}
-                //if (dDown == true)
-                //{
-                //    Tpiece1.X += 20;
-                //    Tpiece4.X += 20;
-                //    Tpiece3.X += 20;
-                //    Tpiece2.X += 20;
-                //    Tpiece5.X += 20;
-                //}
+                if (aDown == true)
+                {
+                    Tpiece1.X -= 20;
+                    Tpiece4.X -= 20;
+                    Tpiece3.X -= 20;
+                    Tpiece2.X -= 20;
+                    Tpiece5.X -= 20;
+                }
+                if (dDown == true)
+                {
+                    Tpiece1.X += 20;
+                    Tpiece4.X += 20;
+                    Tpiece3.X += 20;
+                    Tpiece2.X += 20;
+                    Tpiece5.X += 20;
+                }
                 //rotate
                 //if (jDown == true)
                 //{
