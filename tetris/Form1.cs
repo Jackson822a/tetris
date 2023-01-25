@@ -94,55 +94,55 @@ namespace tetris
                 }
                 //left right
 
-                if (aDown == true)
-                {
-                    Tpiece1.X -= 20;
-                    Tpiece4.X -= 20;
-                    Tpiece3.X -= 20;
-                    Tpiece2.X -= 20;
-                    Tpiece5.X -= 20;
-                }
-                if (dDown == true)
-                {
-                    Tpiece1.X += 20;
-                    Tpiece4.X += 20;
-                    Tpiece3.X += 20;
-                    Tpiece2.X += 20;
-                    Tpiece5.X += 20;
-                }
+                //if (aDown == true)
+                //{
+                //    Tpiece1.X -= 20;
+                //    Tpiece4.X -= 20;
+                //    Tpiece3.X -= 20;
+                //    Tpiece2.X -= 20;
+                //    Tpiece5.X -= 20;
+                //}
+                //if (dDown == true)
+                //{
+                //    Tpiece1.X += 20;
+                //    Tpiece4.X += 20;
+                //    Tpiece3.X += 20;
+                //    Tpiece2.X += 20;
+                //    Tpiece5.X += 20;
+                //}
                 //rotate
-                if (jDown == true)
-                {
-                    Rectangle temp = Tpiece1;
+                //if (jDown == true)
+                //{
+                //    Rectangle temp = Tpiece1;
 
-                    Tpiece1 = Tpiece2;
-                    Tpiece2 = Tpiece3;
-                    Tpiece3 = Tpiece5;
-                    Tpiece5 = temp;
+                //    Tpiece1 = Tpiece2;
+                //    Tpiece2 = Tpiece3;
+                //    Tpiece3 = Tpiece5;
+                //    Tpiece5 = temp;
 
-                    //  intersection
-                    if (Tpiece1.IntersectsWith(GameBorderB) || Tpiece3.IntersectsWith(GameBorderB) || Tpiece2.IntersectsWith(GameBorderB))
-                    {
-                        Tpiece1.Y -= 20;
-                        Tpiece4.Y -= 20;
-                        Tpiece3.Y -= 20;
-                        Tpiece2.Y -= 20;
-                    }
-                    if (Tpiece1.IntersectsWith(GameBorderL))
-                    {
-                        Tpiece1.X += 20;
-                        Tpiece4.X += 20;
-                        Tpiece3.X += 20;
-                        Tpiece2.X += 20;
-                    }
-                    if (Tpiece3.IntersectsWith(GameBorderR))
-                    {
-                        Tpiece1.X -= 20;
-                        Tpiece4.X -= 20;
-                        Tpiece3.X -= 20;
-                        Tpiece2.X -= 20;
-                    }
-                }
+                //    //  intersection
+                //    if (Tpiece1.IntersectsWith(GameBorderB) || Tpiece3.IntersectsWith(GameBorderB) || Tpiece2.IntersectsWith(GameBorderB))
+                //    {
+                //        Tpiece1.Y -= 20;
+                //        Tpiece4.Y -= 20;
+                //        Tpiece3.Y -= 20;
+                //        Tpiece2.Y -= 20;
+                //    }
+                //    if (Tpiece1.IntersectsWith(GameBorderL))
+                //    {
+                //        Tpiece1.X += 20;
+                //        Tpiece4.X += 20;
+                //        Tpiece3.X += 20;
+                //        Tpiece2.X += 20;
+                //    }
+                //    if (Tpiece3.IntersectsWith(GameBorderR))
+                //    {
+                //        Tpiece1.X -= 20;
+                //        Tpiece4.X -= 20;
+                //        Tpiece3.X -= 20;
+                //        Tpiece2.X -= 20;
+                //    }
+                // }
                 Refresh();
             }
         }
